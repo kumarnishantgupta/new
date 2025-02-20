@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="1PlaceAds - A next-gen hybrid advertising agency blending digital and traditional strategies for maximum brand impact.">
+    <meta name="keywords" content="hybrid advertising, digital marketing, google ads, meta ads, outdoor advertising, 1PlaceAds">
+    <meta name="author" content="1PlaceAds Team">
+    <meta name="robots" content="index, follow">
+    <title>1PlaceAds - Hybrid Advertising Agency | Digital & Traditional Solutions</title>
+    <link rel="canonical" href="https://www.1placeads.com/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "1PlaceAds",
+        "url": "https://www.1placeads.com",
+        "logo": "https://www.1placeads.com/logo.png",
+        "description": "A hybrid advertising agency combining digital and traditional marketing strategies.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@1placeads.com",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="preloader">
+        <h1 class="glitch" data-text="1PlaceAds">1PlaceAds</h1>
+        <span class="percentage">0%</span>
+    </div>
+    <div class="custom-cursor"></div>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo"><h1>1PlaceAds</h1></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon" role="button" aria-label="Open Menu">☰</div>
+        </nav>
+    </header>
+    <div class="fullscreen-menu" id="fullscreen-menu">
+        <div class="close-btn" id="close-btn" role="button" aria-label="Close Menu">×</div>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <main>
+        <section id="home" class="hero">
+            <h1>Revolutionizing Hybrid Advertising</h1>
+            <p>Unleash Your Brand’s Potential with Digital & Traditional Strategies</p>
+            <a href="#services" class="cta-button">Discover More</a>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <article class="service">
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Elevate your online presence with data-driven campaigns.</p>
+                </article>
+                <article class="service">
+                    <i class="fas fa-search-dollar" aria-hidden="true"></i>
+                    <h3>Google Ads</h3>
+                    <p>Precision-targeted ads for instant reach.</p>
+                </article>
+                <article class="service">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h3>Meta Ads</h3>
+                    <p>Engage audiences on social platforms.</p>
+                </article>
+                <article class="service">
+                    <i class="fas fa-building" aria-hidden="true"></i>
+                    <h3>Outdoor Ads</h3>
+                    <p>High-impact billboards for maximum visibility.</p>
+                </article>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="filter-buttons" role="navigation" aria-label="Portfolio Filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="ads">Google Ads</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor Ads</button>
+            </div>
+            <div class="portfolio-container">
+                <article class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/300x200?text=Web+Design" alt="Web Design Project by 1PlaceAds" loading="lazy">
+                    <div class="portfolio-overlay"><h3>Web Design</h3><p>Sleek, responsive websites.</p></div>
+                </article>
+                <article class="portfolio-item" data-category="ads">
+                    <img src="https://via.placeholder.com/300x200?text=Google+Ads" alt="Google Ads Campaign by 1PlaceAds" loading="lazy">
+                    <div class="portfolio-overlay"><h3>Google Ads</h3><p>Targeted ad campaigns.</p></div>
+                </article>
+                <article class="portfolio-item" data-category="outdoor">
+                    <img src="https://via.placeholder.com/300x200?text=Outdoor+Ads" alt="Outdoor Advertising by 1PlaceAds" loading="lazy">
+                    <div class="portfolio-overlay"><h3>Outdoor Ads</h3><p>Eye-catching billboards.</p></div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+            <p id="response-message" style="display:none; color: rgb(16, 16, 16);">Your message has been sent successfully!</p>
+          </section>
+          <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="cool-testimonial">
+                        <p>"1PlaceAds transformed our digital presence with their innovative strategies. Highly recommend!"</p>
+                        <span class="client-name">- Nishant, CEO of TechCorp</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="cool-testimonial">
+                        <p>"Their hybrid approach doubled our reach in just months. Exceptional service!"</p>
+                        <span class="client-name">- Sumit, Marketing Director at GrowEasy</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="cool-testimonial">
+                        <p>"The team’s creativity and execution are unmatched. Our brand is thriving!"</p>
+                        <span class="client-name">- Aditya, Founder of NextGen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 1PlaceAds. All Rights Reserved.</p>
+        <div class="social-icons" role="navigation" aria-label="Social Media Links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
